@@ -1,0 +1,28 @@
+/* src/components/ImageCarousel/styles.css */
+.carousel {
+  position: relative;
+  max-width: 600px; /* Atur lebar maksimal carousel */
+  margin: auto;
+}
+
+.active-image {
+  display: block; /* Pastikan gambar menyesuaikan dengan lebar container */
+	height: 400px;
+	width: 400px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.prev { left: 0; }
+.next { right: 0; }

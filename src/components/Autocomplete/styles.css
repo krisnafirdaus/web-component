@@ -1,0 +1,40 @@
+/* src/components/Autocomplete/styles.css */
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.suggestions {
+  position: absolute;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+}
+
+.suggestion-active,
+.suggestions li:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.suggestions li {
+  padding: 10px;
+  list-style: none;
+}
+
+.no-suggestions {
+  padding: 10px;
+  color: #999;
+}

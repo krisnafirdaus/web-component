@@ -1,0 +1,13 @@
+/* src/components/PhotoGallery/styles.css */
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Atur jarak antar foto */
+}
+
+.photo {
+  width: 200px; /* Atur lebar setiap foto */
+  height: 200px; /* Atur tinggi setiap foto */
+  object-fit: cover; /* Pastikan foto menutupi area tanpa mengubah rasio aspek */
+  border-radius: 8px; /* Tambahkan sedikit lengkungan pada sudut foto */
+}
