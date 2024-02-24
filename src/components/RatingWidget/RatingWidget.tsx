@@ -10,6 +10,7 @@ const RatingWidget: React.FC<RatingWidgetProps> = ({ maxRating }) => {
     <div className="rating-widget">
       {[...Array(maxRating)].map((star, index) => {
         index += 1;
+				console.log(star)
         return (
           <button
             key={index}

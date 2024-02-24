@@ -1,5 +1,5 @@
 // src/components/Autocomplete/Autocomplete.tsx
-import React, { useState, ChangeEvent, MouseEvent, KeyboardEvent, FocusEvent } from 'react';
+import React, { useState, ChangeEvent, MouseEvent } from 'react';
 import './styles.css';
 import { AutocompleteProps } from './types'
 
@@ -30,11 +30,11 @@ const Autocomplete: React.FC<AutocompleteProps> = ({ suggestions }) => {
     setShowSuggestions(false);
   };
 
-  const onKeyDown = (e: KeyboardEvent<HTMLInputElement>) => {
+  const onKeyDown = () => {
     // Implement keyboard navigation
   };
 
-  const onBlur = (e: FocusEvent<HTMLInputElement>) => {
+  const onBlur = () => {
     // Optionally close suggestions list when the input loses focus
     setShowSuggestions(false);
   };
